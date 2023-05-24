@@ -14,8 +14,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <div className='min-h-screen bg-gray-500 grid place-content-center'>
-          <Navbar />
-          {children}
+          <div className='sm:w-[500px] md:w-[600px] lg:w-[700px]'>
+            <Navbar />
+            {children}
+          </div>
         </div>
       </body>
     </html>
