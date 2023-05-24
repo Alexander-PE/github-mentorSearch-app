@@ -13,8 +13,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
+        <div className='min-h-screen bg-gray-500 grid place-content-center'>
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   )
